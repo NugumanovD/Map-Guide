@@ -13,7 +13,7 @@
         <!--Settings-->
         <scene sceneID="ak5-nc-gC8">
             <objects>
-                <tableViewController id="P4G-vo-xNe" customClass="Settings" customModule="MapGuide" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="Settings" storyboardIdentifier="Settings" id="P4G-vo-xNe" customClass="Settings" customModule="MapGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cT5-Yp-Ymu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

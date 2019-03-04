@@ -23,18 +23,11 @@ class TapBarController: UITabBarController, UITabBarControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let mapItemView = self.tabBar.subviews.first!
-        mapItemImageView = mapItemView.subviews.first as? UIImageView
-        mapItemImageView.contentMode = .center
         
-        let busItemView = self.tabBar.subviews[1]
-        busItemImageView = busItemView.subviews.first as? UIImageView
-        busItemImageView.contentMode = .center
-        
-        let settingsItemView = self.tabBar.subviews[2]
-        settingsItemImageView = settingsItemView.subviews.first as? UIImageView
-        settingsItemImageView.contentMode = .center
-        
+        let mapViewController = setupTabBarElement(StoryboardName: "Map", Identifier: "MapViewController", titel: "MapViewController", image: "map")
+        let settingsViewController = setupTabBarElement(StoryboardName: "Settings", Identifier: "Settings", titel: "Settings", image: "settings")
+        viewControllers = [mapViewController, settingsViewController]
+        setImage()
     }
     
     func setImage() {
@@ -45,8 +38,20 @@ class TapBarController: UITabBarController, UITabBarControllerDelegate {
         let busTabBarItem = (self.tabBar.items?[1])! as UITabBarItem
         busTabBarItem.image = UIImage(named: "bus")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
         
-        let settingsTabBarItem = (self.tabBar.items?[2])! as UITabBarItem
-        settingsTabBarItem.image = UIImage(named: "settings")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+//        let settingsTabBarItem = (self.tabBar.items?[2])! as UITabBarItem
+//        settingsTabBarItem.image = UIImage(named: "settings")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+        
+        let mapItemView = self.tabBar.subviews.first!
+        mapItemImageView = mapItemView.subviews.first as? UIImageView
+        mapItemImageView.contentMode = .center
+        
+        let busItemView = self.tabBar.subviews[1]
+        busItemImageView = busItemView.subviews.first as? UIImageView
+        busItemImageView.contentMode = .center
+        
+//        let settingsItemView = self.tabBar.subviews[2]
+//        settingsItemImageView = settingsItemView.subviews.first as? UIImageView
+//        settingsItemImageView.contentMode = .center
     }
     
     func animation(elementBarItem: UIImageView) {
@@ -59,19 +64,29 @@ class TapBarController: UITabBarController, UITabBarControllerDelegate {
         }
     }
     
-    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem)  {
+//    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem)  {
+//        
+//        guard let tabBarItemTag = TabBarItemTag(rawValue: item.tag) else {
+//            return
+//        }
+//        switch tabBarItemTag {
+//        case .navigationItem:
+//            animation(elementBarItem: mapItemImageView)
+//        case .busItemView:
+//            animation(elementBarItem: busItemImageView)
+//        case .settingsItemView:
+//            animation(elementBarItem: settingsItemImageView)
+//        }
+//    }
+    
+    func setupTabBarElement(StoryboardName: String, Identifier: String, titel: String, image: String) -> UIViewController {
+        var myViewController: UIViewController!
         
-        guard let tabBarItemTag = TabBarItemTag(rawValue: item.tag) else {
-            return
-        }
-        switch tabBarItemTag {
-        case .navigationItem:
-            animation(elementBarItem: mapItemImageView)
-        case .busItemView:
-            animation(elementBarItem: busItemImageView)
-        case .settingsItemView:
-            animation(elementBarItem: settingsItemImageView)
-        }
+        
+        let storyboard = UIStoryboard(name: StoryboardName, bundle: nil)
+        myViewController = storyboard.instantiateViewController(withIdentifier: Identifier)
+        
+        return myViewController
     }
     
 }

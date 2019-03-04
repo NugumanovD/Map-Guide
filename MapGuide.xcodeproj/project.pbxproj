@@ -18,6 +18,7 @@
 		7B1F45A722145713003ED68D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B1F45A622145713003ED68D /* Assets.xcassets */; };
 		7B1F45AA22145713003ED68D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B1F45A822145713003ED68D /* LaunchScreen.storyboard */; };
 		7B1F45B2221468D4003ED68D /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1F45B1221468D4003ED68D /* LocationService.swift */; };
+		7B631430222D851F00BE61F7 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B63142F222D851F00BE61F7 /* Map.storyboard */; };
 		7B9E5B3622247C99004E2C02 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9E5B3522247C99004E2C02 /* SettingsViewController.swift */; };
 		7B9E5B3C22248882004E2C02 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B9E5B3B22248882004E2C02 /* Default-568h@2x.png */; };
 		7B9E5B3F22260127004E2C02 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B9E5B3E22260127004E2C02 /* MapKit.framework */; };
@@ -45,6 +46,7 @@
 		7B1F45A922145713003ED68D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B1F45AB22145713003ED68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B1F45B1221468D4003ED68D /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		7B63142F222D851F00BE61F7 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		7B9E5B3522247C99004E2C02 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		7B9E5B3B22248882004E2C02 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7B9E5B3E22260127004E2C02 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -116,6 +118,17 @@
 			path = MapGuide;
 			sourceTree = "<group>";
 		};
+		7B63142E222D84F800BE61F7 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				7B1F45A122145711003ED68D /* MapViewController.swift */,
+				7B9E5B422226CDD5004E2C02 /* MapMarkerWindow.swift */,
+				7B9E5B402226CA39004E2C02 /* MapMarkerWindowView.xib */,
+				7B63142F222D851F00BE61F7 /* Map.storyboard */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		7B9E5B37222487ED004E2C02 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,11 +154,9 @@
 		7B9E5B3922248828004E2C02 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				7B1F45A122145711003ED68D /* MapViewController.swift */,
+				7B63142E222D84F800BE61F7 /* Map */,
 				7BDBE71B221ECE03009B64E2 /* BusScreen.swift */,
 				7B9E5B3522247C99004E2C02 /* SettingsViewController.swift */,
-				7B9E5B422226CDD5004E2C02 /* MapMarkerWindow.swift */,
-				7B9E5B402226CA39004E2C02 /* MapMarkerWindowView.xib */,
 				497F4DF2222C22A900AE0C74 /* Settings */,
 			);
 			path = Screens;
@@ -242,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B1F45AA22145713003ED68D /* LaunchScreen.storyboard in Resources */,
+				7B631430222D851F00BE61F7 /* Map.storyboard in Resources */,
 				7B9E5B412226CA39004E2C02 /* MapMarkerWindowView.xib in Resources */,
 				7B9E5B3C22248882004E2C02 /* Default-568h@2x.png in Resources */,
 				497F4DF1222C215400AE0C74 /* Settings.storyboard in Resources */,
