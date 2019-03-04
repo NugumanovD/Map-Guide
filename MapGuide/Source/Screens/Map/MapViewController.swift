@@ -21,7 +21,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBarItem.tag = TabBarItemTag.navigationItem.rawValue
+        
         
         locationManager = CLLocationManager()
         locationManager.delegate = self
