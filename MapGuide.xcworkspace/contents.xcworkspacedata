@@ -4,6 +4,144 @@
    <FileRef
       location = "group:MapGuide.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:MapGuide"
+      name = "MapGuide">
+      <Group
+         location = "group:Source"
+         name = "Source">
+         <Group
+            location = "group:Screens"
+            name = "Screens">
+            <Group
+               location = "group:Settings"
+               name = "Settings">
+               <FileRef
+                  location = "group:Language.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Settings.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:SettingsLanguage.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:UIViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Settings.storyboard">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Map"
+               name = "Map">
+               <FileRef
+                  location = "group:Map.storyboard">
+               </FileRef>
+               <FileRef
+                  location = "group:MapViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:MapMarkerWindow.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:MapMarkerWindowView.xib">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Main"
+               name = "Main">
+               <FileRef
+                  location = "group:Controller.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.swift">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Services"
+            name = "Services">
+            <FileRef
+               location = "group:LocationService.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Resource"
+         name = "Resource">
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:bus.imageset"
+               name = "bus.imageset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:bus.png">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:map.imageset"
+               name = "map.imageset">
+               <FileRef
+                  location = "group:map.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <Group
+               location = "group:station.imageset"
+               name = "station.imageset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:station.jpg">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:settings.imageset"
+               name = "settings.imageset">
+               <FileRef
+                  location = "group:settings.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:LaunchScreen.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:AppDelegate.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
