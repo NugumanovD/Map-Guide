@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Main1: UIViewController {
+class Main: UIViewController {
     
      // MARK: Class variables/constants
     
@@ -32,7 +32,7 @@ class Main1: UIViewController {
         
         let manager = createNavController(controller: Controller.init(storyboard: "Settings", identifier: "Settings", image: "Map", selectedImage: "Map"))
         
-//        let login = createNavController(controller: Controller.init(storyboard: "AuthStoryboard", identifier: "LoginViewController", image: "profile", selectedImage: "profileSelected"))
+
 			
 			
 					let controllerArray = [product, manager]
