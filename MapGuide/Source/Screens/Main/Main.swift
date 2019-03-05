@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Main: UIViewController {
+class Main: UIViewController, UITabBarControllerDelegate {
     
      // MARK: Class variables/constants
     
@@ -31,7 +31,7 @@ class Main: UIViewController {
         
         let settingsItem = createNavController(Controller.init(storyboard: "Settings", identifier: "Settings", image: "settings", selectedImage: "settings", title: "Settings"))
         
-        let controllerArray = [mapItem, settingsItem]
+        let controllerArray = [settingsItem, mapItem]
 		self.tabBarCnt.viewControllers =
             controllerArray.map{ UINavigationController.init(rootViewController: $0)}
 			
@@ -50,5 +50,10 @@ class Main: UIViewController {
         viewController.title = controller.title
         return viewController
     }
+    
+    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        print("Hello")
+    }
+    
     
 }
