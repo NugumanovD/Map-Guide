@@ -31,7 +31,7 @@ class Main: UIViewController, UITabBarControllerDelegate {
         
         let settingsItem = createNavController(Controller.init(storyboard: "Settings", identifier: "Settings", image: "settings", selectedImage: "settings", title: "Settings"))
         
-        let controllerArray = [settingsItem, mapItem]
+        let controllerArray = [mapItem, settingsItem]
 		self.tabBarCnt.viewControllers =
             controllerArray.map{ UINavigationController.init(rootViewController: $0)}
 			

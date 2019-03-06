@@ -7,11 +7,38 @@
 //
 
 import Foundation
+import RealmSwift
 
 class Restaurants {
     
-    let restsArray = [State(lat: 47.8171141648544, long: 35.088985562324524),
-                      State(lat: 47.82057216443656, long: 35.09705364704132),
-                      State(lat: 47.824952, long: 35.090359),
-                      State(lat: 47.83031095861402, long: 35.07190525531769)]
+    
+    func loadStateData() {
+        
+//        let pektoral = StateModel()
+//        pektoral.name = "Пектораль"
+//        pektoral.latitude = 47.8171141648544
+//        pektoral.longitude = 35.088985562324524
+//
+//        let horticaHotel = StateModel()
+//        horticaHotel.name = "Хортица"
+//        horticaHotel.latitude = 47.8205721644365
+//        horticaHotel.longitude = 35.09705364704132
+//
+//        let sagaidachniyHotel = StateModel()
+//        sagaidachniyHotel.name = "Сагайдачный"
+//        sagaidachniyHotel.latitude = 47.824952
+//        sagaidachniyHotel.longitude = 35.090359
+//
+//        let restsArray = [pektoral, horticaHotel, sagaidachniyHotel]
+//
+//        let realmInstance = try! Realm()
+//
+//        try! realmInstance.write {
+//            for rest in restsArray {
+//                realmInstance.add(rest)
+//            }
+//        }
+    }
+    
+    
 }

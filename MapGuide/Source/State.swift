@@ -8,7 +8,7 @@
 
 import Foundation
 import CoreLocation
-struct State {
+struct StateTEST {
     
 //    let name: String
     let lat: Double
