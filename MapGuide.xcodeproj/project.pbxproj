@@ -10,6 +10,7 @@
 		494DF182222DBE5200F7EC8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494DF181222DBE5200F7EC8E /* Main.storyboard */; };
 		494DF184222DBE5E00F7EC8E /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494DF183222DBE5E00F7EC8E /* Main.swift */; };
 		494DF186222DBEA200F7EC8E /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494DF185222DBEA200F7EC8E /* Controller.swift */; };
+		497F4DF1222C215400AE0C74 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497F4DF0222C215400AE0C74 /* Settings.storyboard */; };
 		497F4DF4222C22C100AE0C74 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497F4DF3222C22C100AE0C74 /* Settings.swift */; };
 		497F4DF6222C235E00AE0C74 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497F4DF5222C235E00AE0C74 /* UIViewController.swift */; };
 		497F4DF8222C25DB00AE0C74 /* SettingsLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497F4DF7222C25DB00AE0C74 /* SettingsLanguage.swift */; };
