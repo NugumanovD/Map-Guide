@@ -6,8 +6,10 @@
 //
 
 struct Controller {
-    let storyboard:String
-    let identifier:String
-    let image:String
-    let selectedImage:String
+    
+    let storyboard: String
+    let identifier: String
+    let image: String
+    let selectedImage: String
+    let title: String
 }

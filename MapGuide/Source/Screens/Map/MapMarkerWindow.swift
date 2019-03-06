@@ -21,15 +21,18 @@ class MapMarkerWindow: UIView {
     @IBOutlet weak var moreButton: UIButton!
     @IBOutlet weak var routeFromButton: UIButton!
     
+    @IBOutlet var contentView: MapMarkerWindow!
     weak var delegate: MapMarkerDelegate?
     var spotData: NSDictionary?
     
+    
     @IBAction func moreButtonTapped(_ sender: UIButton) {
         delegate?.didTappedInfoButton(data: spotData!)
+        print("moreButtonTapped")
     }
     
     @IBAction func routeFromButtonTapped(_ sender: UIButton) {
-        
+         print("routeFromButtonTapped")
     }
     
     class func instanceFromNib() -> UIView {

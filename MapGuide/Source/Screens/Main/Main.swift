@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Main: UIViewController {
+class Main: UIViewController, UITabBarControllerDelegate {
     
      // MARK: Class variables/constants
     
@@ -19,7 +19,6 @@ class Main: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         createTabBarController()
         
     }
@@ -28,29 +27,33 @@ class Main: UIViewController {
     
     func createTabBarController() {
         
-        let product = createNavController(controller: Controller.init(storyboard: "Map", identifier: "MapViewController", image: "map", selectedImage: "map"))
+        let mapItem = createNavController(Controller.init(storyboard: "Map", identifier: "MapViewController", image: "map", selectedImage: "map", title: "Map"))
         
-        let manager = createNavController(controller: Controller.init(storyboard: "Settings", identifier: "Settings", image: "Map", selectedImage: "Map"))
+        let settingsItem = createNavController(Controller.init(storyboard: "Settings", identifier: "Settings", image: "settings", selectedImage: "settings", title: "Settings"))
         
-
+        let controllerArray = [mapItem, settingsItem]
+		self.tabBarCnt.viewControllers =
+            controllerArray.map{ UINavigationController.init(rootViewController: $0)}
 			
-			
-					let controllerArray = [product, manager]
-					self.tabBarCnt.viewControllers = controllerArray.map{ UINavigationController.init(rootViewController: $0)}
-			
-        
         self.view.addSubview(tabBarCnt.view)
     }
     
-    func createNavController(controller:Controller) -> UIViewController {
+    func createNavController(_ controller:Controller) -> UIViewController {
         
         var viewController = UIViewController()
+        
         let storyboard = UIStoryboard(name: controller.storyboard, bundle: nil)
         viewController = storyboard.instantiateViewController(withIdentifier: controller.identifier)
         viewController.tabBarItem.image = UIImage(named: controller.image)?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
         viewController.tabBarItem.selectedImage = UIImage(named: controller.selectedImage)?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-        viewController.tabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        
+        viewController.title = controller.title
         return viewController
     }
+    
+    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        print("Hello")
+    }
+    
     
 }

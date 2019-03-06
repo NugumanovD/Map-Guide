@@ -97,7 +97,7 @@ extension Settings {
 			vc.tableView.backgroundColor = #colorLiteral(red: 0.9371530414, green: 0.9373135567, blue: 0.9371429086, alpha: 1)
 			vc.tableView.tableFooterView = UIView(frame: .zero)
 			
-			vc.title = "Настройки"
+//            vc.title = "Настройки"
 		
 			let backItem = UIBarButtonItem()
 			backItem.title = " "

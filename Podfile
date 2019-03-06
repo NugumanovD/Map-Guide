@@ -9,4 +9,5 @@ target 'MapGuide' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
+  pod 'RealmSwift'
 end
