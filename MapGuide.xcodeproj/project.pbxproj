@@ -202,6 +202,7 @@
 				7B1F459922145711003ED68D /* Frameworks */,
 				7B1F459A22145711003ED68D /* Resources */,
 				76EC059243033CC3008B1FEB /* [CP] Copy Pods Resources */,
+				BA3236B77B1BAF2760C24B0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,6 +293,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapGuide/Pods-MapGuide-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA3236B77B1BAF2760C24B0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MapGuide/Pods-MapGuide-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapGuide/Pods-MapGuide-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E1930270354F909E7A3DDE1D /* [CP] Check Pods Manifest.lock */ = {
